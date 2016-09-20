@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Result</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <fieldset>
+  	<legend align="center">Credit Card Validation</legend>
+  	<div class="calcBody shadow result" align="center">
+  		<div>
+  			<%
+	  		for(var i = 0; i < messages.length; i++) {%>
+	  			<%=messages[i]%>
+	  			<br>
+	  		<%}
+	  		%>
+  		</div>
+  		<div>
+  			<a href="/" autofocus="autofocus" class="btn btn-lg btn-primary mybutton" style="margin: 10% 0% 10% 0%;" tabindex="1">&#129192;&nbsp;&nbsp;&nbsp;Back</a>
+  		</div>
+  	</div>
+  </fieldset>
+  </body>
+</html>

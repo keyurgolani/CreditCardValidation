@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%=title%></title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+  <fieldset>
+  	<legend align="center"><%=title%></legend>
+  	<div class="calcBody shadow" align="center">
+  		<form method="get" action="/validate">
+  			<table style="font-size: 200%">
+	  			<tr align="left">
+	  				<td colspan="2">Credit Card:</td>
+	  			</tr>
+	  			<tr>
+	  				<td colspan="2"><input type="text" name="cc" autofocus="autofocus" size="16" placeHolder="XXXXXXXXXXXXXXXX" class="display" tabindex="1"></td>
+	  			</tr>
+	  			<tr align="left">
+	  				<td style="width: 60%;">Expiry:</td>
+	  				<td style="width: 40%;">CVV:</td>
+	  			</tr>
+	  			<tr>
+	  				<td style="width: 60%;">
+	  					<input type="text" placeHolder="MM/YY" name="exp" autofocus="autofocus" class="display" size="4" tabindex="2">
+	  				</td>
+	  				<td style="width: 40%;">
+	  					<input type="text" placeHolder="XXX(X)" name="cvv" autofocus="autofocus" class="display" tabindex="3" size="3">
+	  				</td>
+	  			</tr>
+	  			<tr>
+	  				<td colspan="2">&nbsp;<td>
+	  			</tr>
+	  			<tr>
+	  				<td colspan="2">
+						<input type="submit" value="Validate" class="btn btn-lg btn-primary mybutton" tabindex="4">
+					</td>
+	  			</tr>
+	  		</table>
+  		</form>
+  	</div>
+  </fieldset>
+  </body>
+</html>

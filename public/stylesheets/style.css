@@ -1,0 +1,43 @@
+body {
+  background-color: #FF5733;
+}
+
+legend {
+	font-size: 300%;
+	font-family: fantasy;
+	color: white;
+	border-bottom: 5px solid white;
+}
+
+.calcBody {
+	width: 40%;
+	height: 35%;
+	background-color: #DAF7A6;
+	margin: 5% auto;
+/*	border: 3px solid black;*/
+	border-radius: 15px;
+	padding: 2%;
+}
+
+.shadow {
+  -webkit-box-shadow: 3px 3px 5px 6px #444;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    3px 3px 5px 6px #444;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         3px 3px 5px 6px #444;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.result {
+	font-size: 200%;
+	font-family: sans-serif;
+}
+
+.display {
+	border-radius: 15px;
+	padding: 10px;
+/*	border: 3px solid black;*/
+}
+
+.mybutton {
+	height: 150%;
+	width: 100%;
+/*	border: 3px solid black;*/
+}

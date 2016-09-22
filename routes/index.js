@@ -43,10 +43,10 @@ function validateDetails(cardNumber, expiryDate, cvvNumber, callback) {
 	callback(isValidCard, isValidExp, isValidCVV, isNotExpired);
 }
 
-router.get('/validate', function(req, res, next) {
-	var cardNumber = req.param('cc');
-	var expiryDate = req.param('exp');
-	var cvvNumber = req.param('cvv');
+router.post('/validate', function(req, res, next) {
+	var cardNumber = req.body.cc;
+	var expiryDate = req.body.exp;
+	var cvvNumber = req.body.cvv;
 	validateDetails(cardNumber, expiryDate, cvvNumber, function(isValidCard, isValidExp, isValidCVV, isNotExpired) {
 		var messages = [];
 		if(!isValidCard) {
